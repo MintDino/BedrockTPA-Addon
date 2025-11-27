@@ -13,12 +13,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Install zip if missing
+        run: sudo apt-get update && sudo apt-get install -y zip
+
       - name: Zip BedrockTPA into .mcaddon
         run: |
-          ADDON_NAME="BedrockTPA"
-          OUTPUT_FILE="${ADDON_NAME}.mcaddon"
+          OUTPUT_FILE="BedrockTPA.mcaddon"
           rm -f "$OUTPUT_FILE"
-          zip -r "$OUTPUT_FILE" "$ADDON_NAME"
+          cd BedrockTPA
+          zip -r "../$OUTPUT_FILE" .
 
       - name: Upload .mcaddon artifact
         uses: actions/upload-artifact@v4
