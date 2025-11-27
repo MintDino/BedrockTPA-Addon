@@ -19,10 +19,9 @@ jobs:
           OUTPUT_FILE="${ADDON_NAME}.mcaddon"
           rm -f "$OUTPUT_FILE"
           zip -r "$OUTPUT_FILE" "$ADDON_NAME"
-      
+
       - name: Upload .mcaddon artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: BedrockTPA-mcaddon
+          name: BedrockTPA
           path: BedrockTPA.mcaddon
-          
