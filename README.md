@@ -21,7 +21,7 @@ Perfect for:
 
 ## 📦 Installation
 1. Download or clone the addon folder.  
-2. Copy **BedrockTPA_BP** to your `com.mojang/behavior_packs` folder.  
+2. Copy **BedrockTPA** to your `com.mojang/behavior_packs` folder.  
 3. Enable the behavior pack in your world settings.  
 4. Ensure **Experimental Scripting/Gameplay** is enabled.  
 5. Start your world.  
