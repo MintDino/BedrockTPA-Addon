@@ -45,6 +45,10 @@ Type commands in chat:
 - Works in worlds with multiple players.  
 
 ---
+## 🌐 Available On
+- [MCPEDL](https://mcpedl.com/)  
+- [CurseForge](https://www.curseforge.com/minecraft/addons)
+---
 
 ## 📚 License
 This addon is licensed under the MIT License.
